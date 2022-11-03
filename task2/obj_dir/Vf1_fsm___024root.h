@@ -19,8 +19,8 @@ class Vf1_fsm___024root final : public VerilatedModule {
     VL_OUT8(data_out,7,0);
     CData/*0:0*/ __Vclklast__TOP__clk;
     CData/*0:0*/ __Vclklast__TOP__rst;
-    IData/*31:0*/ f1_fsm__DOT__current_state;
-    IData/*31:0*/ f1_fsm__DOT__next_state;
+    SData/*8:0*/ f1_fsm__DOT__current_state;
+    SData/*8:0*/ f1_fsm__DOT__next_state;
 
     // INTERNAL VARIABLES
     Vf1_fsm__Syms* const vlSymsp;

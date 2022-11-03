@@ -6,120 +6,34 @@
 
 #include "Vf1_fsm___024root.h"
 
-VL_INLINE_OPT void Vf1_fsm___024root___sequent__TOP__1(Vf1_fsm___024root* vlSelf) {
+extern const VlUnpacked<CData/*7:0*/, 512> Vf1_fsm__ConstPool__TABLE_headd0a90_0;
+
+VL_INLINE_OPT void Vf1_fsm___024root___sequent__TOP__0(Vf1_fsm___024root* vlSelf) {
     if (false && vlSelf) {}  // Prevent unused
     Vf1_fsm__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vf1_fsm___024root___sequent__TOP__1\n"); );
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vf1_fsm___024root___sequent__TOP__0\n"); );
+    // Init
+    SData/*8:0*/ __Vtableidx2;
     // Body
-    vlSelf->data_out = (((((((((0U == vlSelf->f1_fsm__DOT__current_state) 
-                               | (1U == vlSelf->f1_fsm__DOT__current_state)) 
-                              | (2U == vlSelf->f1_fsm__DOT__current_state)) 
-                             | (3U == vlSelf->f1_fsm__DOT__current_state)) 
-                            | (4U == vlSelf->f1_fsm__DOT__current_state)) 
-                           | (5U == vlSelf->f1_fsm__DOT__current_state)) 
-                          | (6U == vlSelf->f1_fsm__DOT__current_state)) 
-                         | (7U == vlSelf->f1_fsm__DOT__current_state))
-                         ? ((0U == vlSelf->f1_fsm__DOT__current_state)
-                             ? 0U : ((1U == vlSelf->f1_fsm__DOT__current_state)
-                                      ? 1U : ((2U == vlSelf->f1_fsm__DOT__current_state)
-                                               ? 3U
-                                               : ((3U 
-                                                   == vlSelf->f1_fsm__DOT__current_state)
-                                                   ? 7U
-                                                   : 
-                                                  ((4U 
-                                                    == vlSelf->f1_fsm__DOT__current_state)
-                                                    ? 0xfU
-                                                    : 
-                                                   ((5U 
-                                                     == vlSelf->f1_fsm__DOT__current_state)
-                                                     ? 0x1fU
-                                                     : 
-                                                    ((6U 
-                                                      == vlSelf->f1_fsm__DOT__current_state)
-                                                      ? 0x3fU
-                                                      : 0x7fU)))))))
-                         : ((8U == vlSelf->f1_fsm__DOT__current_state)
-                             ? 0xffU : 0U));
+    __Vtableidx2 = vlSelf->f1_fsm__DOT__current_state;
+    vlSelf->data_out = Vf1_fsm__ConstPool__TABLE_headd0a90_0
+        [__Vtableidx2];
+    vlSelf->f1_fsm__DOT__current_state = ((IData)(vlSelf->rst)
+                                           ? 0U : (IData)(vlSelf->f1_fsm__DOT__next_state));
 }
 
-VL_INLINE_OPT void Vf1_fsm___024root___sequent__TOP__2(Vf1_fsm___024root* vlSelf) {
-    if (false && vlSelf) {}  // Prevent unused
-    Vf1_fsm__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vf1_fsm___024root___sequent__TOP__2\n"); );
-    // Body
-    vlSelf->f1_fsm__DOT__current_state = ((IData)(vlSelf->rst)
-                                           ? 0U : vlSelf->f1_fsm__DOT__next_state);
-}
+extern const VlUnpacked<SData/*8:0*/, 1024> Vf1_fsm__ConstPool__TABLE_h22a7becd_0;
 
 VL_INLINE_OPT void Vf1_fsm___024root___combo__TOP__0(Vf1_fsm___024root* vlSelf) {
     if (false && vlSelf) {}  // Prevent unused
     Vf1_fsm__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vf1_fsm___024root___combo__TOP__0\n"); );
+    // Init
+    SData/*9:0*/ __Vtableidx1;
     // Body
-    vlSelf->f1_fsm__DOT__next_state = (((((((((0U == vlSelf->f1_fsm__DOT__current_state) 
-                                              | (1U 
-                                                 == vlSelf->f1_fsm__DOT__current_state)) 
-                                             | (2U 
-                                                == vlSelf->f1_fsm__DOT__current_state)) 
-                                            | (3U == vlSelf->f1_fsm__DOT__current_state)) 
-                                           | (4U == vlSelf->f1_fsm__DOT__current_state)) 
-                                          | (5U == vlSelf->f1_fsm__DOT__current_state)) 
-                                         | (6U == vlSelf->f1_fsm__DOT__current_state)) 
-                                        | (7U == vlSelf->f1_fsm__DOT__current_state))
-                                        ? ((0U == vlSelf->f1_fsm__DOT__current_state)
-                                            ? ((IData)(vlSelf->en)
-                                                ? 1U
-                                                : vlSelf->f1_fsm__DOT__current_state)
-                                            : ((1U 
-                                                == vlSelf->f1_fsm__DOT__current_state)
-                                                ? ((IData)(vlSelf->en)
-                                                    ? 2U
-                                                    : vlSelf->f1_fsm__DOT__current_state)
-                                                : (
-                                                   (2U 
-                                                    == vlSelf->f1_fsm__DOT__current_state)
-                                                    ? 
-                                                   ((IData)(vlSelf->en)
-                                                     ? 3U
-                                                     : vlSelf->f1_fsm__DOT__current_state)
-                                                    : 
-                                                   ((3U 
-                                                     == vlSelf->f1_fsm__DOT__current_state)
-                                                     ? 
-                                                    ((IData)(vlSelf->en)
-                                                      ? 4U
-                                                      : vlSelf->f1_fsm__DOT__current_state)
-                                                     : 
-                                                    ((4U 
-                                                      == vlSelf->f1_fsm__DOT__current_state)
-                                                      ? 
-                                                     ((IData)(vlSelf->en)
-                                                       ? 5U
-                                                       : vlSelf->f1_fsm__DOT__current_state)
-                                                      : 
-                                                     ((5U 
-                                                       == vlSelf->f1_fsm__DOT__current_state)
-                                                       ? 
-                                                      ((IData)(vlSelf->en)
-                                                        ? 6U
-                                                        : vlSelf->f1_fsm__DOT__current_state)
-                                                       : 
-                                                      ((6U 
-                                                        == vlSelf->f1_fsm__DOT__current_state)
-                                                        ? 
-                                                       ((IData)(vlSelf->en)
-                                                         ? 7U
-                                                         : vlSelf->f1_fsm__DOT__current_state)
-                                                        : 
-                                                       ((IData)(vlSelf->en)
-                                                         ? 8U
-                                                         : vlSelf->f1_fsm__DOT__current_state))))))))
-                                        : ((8U == vlSelf->f1_fsm__DOT__current_state)
-                                            ? ((IData)(vlSelf->en)
-                                                ? 0U
-                                                : vlSelf->f1_fsm__DOT__current_state)
-                                            : 0U));
+    __Vtableidx1 = (((IData)(vlSelf->en) << 9U) | (IData)(vlSelf->f1_fsm__DOT__current_state));
+    vlSelf->f1_fsm__DOT__next_state = Vf1_fsm__ConstPool__TABLE_h22a7becd_0
+        [__Vtableidx1];
 }
 
 void Vf1_fsm___024root___eval(Vf1_fsm___024root* vlSelf) {
@@ -127,12 +41,9 @@ void Vf1_fsm___024root___eval(Vf1_fsm___024root* vlSelf) {
     Vf1_fsm__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vf1_fsm___024root___eval\n"); );
     // Body
-    if (((IData)(vlSelf->clk) & (~ (IData)(vlSelf->__Vclklast__TOP__clk)))) {
-        Vf1_fsm___024root___sequent__TOP__1(vlSelf);
-    }
     if ((((IData)(vlSelf->clk) & (~ (IData)(vlSelf->__Vclklast__TOP__clk))) 
          | ((IData)(vlSelf->rst) & (~ (IData)(vlSelf->__Vclklast__TOP__rst))))) {
-        Vf1_fsm___024root___sequent__TOP__2(vlSelf);
+        Vf1_fsm___024root___sequent__TOP__0(vlSelf);
     }
     Vf1_fsm___024root___combo__TOP__0(vlSelf);
     // Final

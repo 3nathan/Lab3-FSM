@@ -21,8 +21,8 @@ VL_ATTR_COLD void Vf1_fsm___024root__trace_init_sub__TOP__0(Vf1_fsm___024root* v
     tracep->declBit(c+2,"rst", false,-1);
     tracep->declBit(c+3,"en", false,-1);
     tracep->declBus(c+4,"data_out", false,-1, 7,0);
-    tracep->declBus(c+5,"current_state", false,-1, 31,0);
-    tracep->declBus(c+6,"next_state", false,-1, 31,0);
+    tracep->declBus(c+5,"current_state", false,-1, 8,0);
+    tracep->declBus(c+6,"next_state", false,-1, 8,0);
     tracep->popNamePrefix(1);
 }
 
@@ -70,7 +70,7 @@ VL_ATTR_COLD void Vf1_fsm___024root__trace_full_sub_0(Vf1_fsm___024root* vlSelf,
     bufp->fullBit(oldp+2,(vlSelf->rst));
     bufp->fullBit(oldp+3,(vlSelf->en));
     bufp->fullCData(oldp+4,(vlSelf->data_out),8);
-    bufp->fullIData(oldp+5,(vlSelf->f1_fsm__DOT__current_state),32);
-    bufp->fullIData(oldp+6,(vlSelf->f1_fsm__DOT__next_state),32);
+    bufp->fullSData(oldp+5,(vlSelf->f1_fsm__DOT__current_state),9);
+    bufp->fullSData(oldp+6,(vlSelf->f1_fsm__DOT__next_state),9);
     bufp->fullIData(oldp+7,(8U),32);
 }

@@ -40,6 +40,6 @@ VL_ATTR_COLD void Vf1_fsm___024root___ctor_var_reset(Vf1_fsm___024root* vlSelf) 
     vlSelf->rst = VL_RAND_RESET_I(1);
     vlSelf->en = VL_RAND_RESET_I(1);
     vlSelf->data_out = VL_RAND_RESET_I(8);
-    vlSelf->f1_fsm__DOT__current_state = 0;
-    vlSelf->f1_fsm__DOT__next_state = 0;
+    vlSelf->f1_fsm__DOT__current_state = VL_RAND_RESET_I(9);
+    vlSelf->f1_fsm__DOT__next_state = VL_RAND_RESET_I(9);
 }

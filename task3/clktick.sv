@@ -33,6 +33,7 @@ f1_fsm myF1StateMachine (
   .clk      (clk),
   .rst      (rst),
   .en       (tick),
+  .trigger  (trigger),
   .data_out (data_out)
 );
 

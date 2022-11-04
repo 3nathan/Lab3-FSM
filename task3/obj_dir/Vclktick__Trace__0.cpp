@@ -26,12 +26,13 @@ void Vclktick___024root__trace_chg_sub_0(Vclktick___024root* vlSelf, VerilatedVc
     bufp->chgBit(oldp+0,(vlSelf->clk));
     bufp->chgBit(oldp+1,(vlSelf->rst));
     bufp->chgBit(oldp+2,(vlSelf->en));
-    bufp->chgSData(oldp+3,(vlSelf->N),16);
-    bufp->chgCData(oldp+4,(vlSelf->data_out),8);
-    bufp->chgSData(oldp+5,(vlSelf->clktick__DOT__count),16);
-    bufp->chgBit(oldp+6,(vlSelf->clktick__DOT__tick));
-    bufp->chgSData(oldp+7,(vlSelf->clktick__DOT__myF1StateMachine__DOT__current_state),9);
-    bufp->chgSData(oldp+8,(vlSelf->clktick__DOT__myF1StateMachine__DOT__next_state),9);
+    bufp->chgBit(oldp+3,(vlSelf->trigger));
+    bufp->chgSData(oldp+4,(vlSelf->N),16);
+    bufp->chgCData(oldp+5,(vlSelf->data_out),8);
+    bufp->chgSData(oldp+6,(vlSelf->clktick__DOT__count),16);
+    bufp->chgBit(oldp+7,(vlSelf->clktick__DOT__tick));
+    bufp->chgSData(oldp+8,(vlSelf->clktick__DOT__myF1StateMachine__DOT__current_state),9);
+    bufp->chgSData(oldp+9,(vlSelf->clktick__DOT__myF1StateMachine__DOT__next_state),9);
 }
 
 void Vclktick___024root__trace_cleanup(void* voidSelf, VerilatedVcd* /*unused*/) {

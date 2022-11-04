@@ -16,6 +16,7 @@ class Vclktick___024root final : public VerilatedModule {
     VL_IN8(clk,0,0);
     VL_IN8(rst,0,0);
     VL_IN8(en,0,0);
+    VL_IN8(trigger,0,0);
     VL_OUT8(data_out,7,0);
     CData/*0:0*/ clktick__DOT__tick;
     CData/*0:0*/ __Vclklast__TOP__clk;

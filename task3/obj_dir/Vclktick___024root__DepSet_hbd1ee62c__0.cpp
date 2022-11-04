@@ -82,5 +82,7 @@ void Vclktick___024root___eval_debug_assertions(Vclktick___024root* vlSelf) {
         Verilated::overWidthError("rst");}
     if (VL_UNLIKELY((vlSelf->en & 0xfeU))) {
         Verilated::overWidthError("en");}
+    if (VL_UNLIKELY((vlSelf->trigger & 0xfeU))) {
+        Verilated::overWidthError("trigger");}
 }
 #endif  // VL_DEBUG

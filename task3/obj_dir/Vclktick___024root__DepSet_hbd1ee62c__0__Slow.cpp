@@ -52,6 +52,7 @@ VL_ATTR_COLD void Vclktick___024root___ctor_var_reset(Vclktick___024root* vlSelf
     vlSelf->clk = VL_RAND_RESET_I(1);
     vlSelf->rst = VL_RAND_RESET_I(1);
     vlSelf->en = VL_RAND_RESET_I(1);
+    vlSelf->trigger = VL_RAND_RESET_I(1);
     vlSelf->N = VL_RAND_RESET_I(16);
     vlSelf->data_out = VL_RAND_RESET_I(8);
     vlSelf->clktick__DOT__count = VL_RAND_RESET_I(16);

@@ -21,7 +21,7 @@ int main(int argc, char **argv, char **env) {
  
   // init Vbuddy
   if (vbdOpen()!=1) return(-1);
-  vbdHeader("L3T2:Clktick");
+  vbdHeader("L3T3:Clktick");
   vbdSetMode(1);        // Flag mode set to one-shot
 
   // initialize simulation inputs
@@ -43,7 +43,7 @@ int main(int argc, char **argv, char **env) {
     vbdBar(top->data_out & 0xFF);
 
     // set up input signals of testbench
-    top->rst = (simcyc < 2) | vbdFlag();    // assert reset for 1st cycle
+    top->rst = (simcyc < 2);            // assert reset for 1st cycle
     top->en = (simcyc > 2);
     top->N = vbdValue();                // for my computer, N = 24
     vbdCycle(simcyc);

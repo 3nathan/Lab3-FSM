@@ -14,6 +14,7 @@ Vclktick::Vclktick(VerilatedContext* _vcontextp__, const char* _vcname__)
     , clk{vlSymsp->TOP.clk}
     , rst{vlSymsp->TOP.rst}
     , en{vlSymsp->TOP.en}
+    , trigger{vlSymsp->TOP.trigger}
     , data_out{vlSymsp->TOP.data_out}
     , N{vlSymsp->TOP.N}
     , rootp{&(vlSymsp->TOP)}

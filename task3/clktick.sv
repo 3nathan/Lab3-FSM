@@ -1,15 +1,17 @@
 module clktick #(
-	parameter WIDTH = 16
+	parameter N_WIDTH = 16,
+            D_WIDTH = 8
 )(
   // interface signals
-  input  logic             clk,      // clock 
-  input  logic             rst,      // reset
-  input  logic             en,       // enable signal
-  input  logic [WIDTH-1:0] N,     	 // clock divided by N+1
-  output logic  		       tick      // tick output
+  input  logic                clk,      // clock 
+  input  logic                rst,      // reset
+  input  logic                en,       // enable signal
+  input  logic [N_WIDTH-1:0]  N,     	  // clock divided by N+1
+  output logic [D_WIDTH-1:0]  data_out  // tick output
 );
 
-logic [WIDTH-1:0] count;
+logic [N_WIDTH-1:0] count;
+logic               tick;
 
 always_ff @ (posedge clk)
     if (rst) begin
@@ -26,4 +28,12 @@ always_ff @ (posedge clk)
 		    count <= count - 1'b1;
 	        end
         end
+
+f1_fsm myF1StateMachine (
+  .clk      (clk),
+  .rst      (rst),
+  .en       (tick),
+  .data_out (data_out)
+);
+
 endmodule

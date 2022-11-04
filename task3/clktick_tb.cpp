@@ -39,15 +39,13 @@ int main(int argc, char **argv, char **env) {
       top->eval ();
     }
 
-    // Display toggle neopixel
-    if (top->tick) {
-      vbdBar(lights);
-      lights = lights ^ 0xFF;
-    }
+    // neobar f1
+    vbdBar(top->data_out & 0xFF);
+
     // set up input signals of testbench
-    top->rst = (simcyc < 2);    // assert reset for 1st cycle
+    top->rst = (simcyc < 2) | vbdFlag();    // assert reset for 1st cycle
     top->en = (simcyc > 2);
-    top->N = vbdValue();
+    top->N = vbdValue();                // for my computer, N = 24
     vbdCycle(simcyc);
 
     if (Verilated::gotFinish())  exit(0);

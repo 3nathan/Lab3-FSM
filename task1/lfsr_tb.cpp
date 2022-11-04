@@ -39,6 +39,7 @@ int main(int argc, char **argv, char **env) {
         }
 
         // vbd 7 segment display
+        vbdHex(2, (int(top->data_out) >> 4) & 0xF);
         vbdHex(1, top->data_out & 0xF);
         // neopixel led strip
         vbdBar(top->data_out & 0xFF);

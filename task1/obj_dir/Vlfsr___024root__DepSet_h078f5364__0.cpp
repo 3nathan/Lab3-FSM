@@ -12,10 +12,10 @@ VL_INLINE_OPT void Vlfsr___024root___sequent__TOP__0(Vlfsr___024root* vlSelf) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vlfsr___024root___sequent__TOP__0\n"); );
     // Body
     if (vlSelf->en) {
-        vlSelf->lfsr__DOT__sreg = ((0xeU & ((IData)(vlSelf->lfsr__DOT__sreg) 
-                                            << 1U)) 
-                                   | (1U & VL_REDXOR_4(
-                                                       (0xcU 
+        vlSelf->lfsr__DOT__sreg = ((0x7eU & ((IData)(vlSelf->lfsr__DOT__sreg) 
+                                             << 1U)) 
+                                   | (1U & VL_REDXOR_8(
+                                                       (0x44U 
                                                         & (IData)(vlSelf->lfsr__DOT__sreg)))));
     } else if (vlSelf->rst) {
         vlSelf->lfsr__DOT__sreg = 1U;
